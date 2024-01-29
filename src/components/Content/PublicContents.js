@@ -41,9 +41,8 @@ const PublicContents = () => {
               ) : (
                 contents.content.map((content) => (
                   <div className="w-full md:w-1/2 px-4 mb-8" key={content._id}>
-                    <a
+                    <button
                       className="block mb-6 overflow-hidden rounded-md"
-                      href="#"
                     >
                       <div className="flex-shrink-0">
                         <img
@@ -53,16 +52,15 @@ const PublicContents = () => {
                           alt={content?.title}
                         />
                       </div>
-                    </a>
+                    </button>
                     <p className="mb-2 text-coolGray-500 font-medium">
                       {new Date(content.createdAt).toDateString()}
                     </p>
-                    <a
+                    <p
                       className="inline-block mb-4 text-2xl md:text-3xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline"
-                      href="#"
                     >
                       {content.title}
-                    </a>
+                    </p>
                     <p className="mb-4 text-coolGray-500">
                       {content.description}
                     </p>

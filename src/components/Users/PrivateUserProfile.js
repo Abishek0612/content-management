@@ -94,13 +94,12 @@ export default function PrivateUserProfile() {
                   <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
                     <div className="sm:col-span-1">
                       <dt className="text-xl font-semi-bold leading-tight tracking-tighter md:text-5xl text-black-500">
-                        Welcome  {profile?.user?.username}
+                        Welcome {profile?.user?.username}
                       </dt>
-                      
                     </div>
 
                     <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
+                      <dt className="text-sm font-medium text-gray-500">
                         Email: {profile?.user?.email}
                       </dt>
                     </div>
